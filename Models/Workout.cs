@@ -1,5 +1,5 @@
 class Workout {
-    public int Id {get; set;}
+    public int? Id {get; set;}
 
     private DateTime start;
     public DateTime Start 
@@ -17,5 +17,13 @@ class Workout {
     public void StopWorkout()
     {
         stop = new DateTime();
+    }
+    public List<Set> Sets {get; set;}
+    public User User {get; set;}
+
+    public Workout(User user){
+        User = user;
+        Sets = [];
+        StartWorkout();
     }
 }

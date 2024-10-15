@@ -3,4 +3,15 @@ public class Exercise {
     public string Name {get; set;}
     public BodyPart BodyPart {get; set;}
     public Equipment? Equipment {get; set;}
+
+    public Exercise(string name, BodyPart bodyPart){
+        Name = name;
+        BodyPart = bodyPart;
+    }
+
+    public Exercise(string name, BodyPart bodyPart, Equipment equipment){
+        Name = name;
+        BodyPart = bodyPart;
+        Equipment = equipment;
+    }
 }
