@@ -1,9 +1,17 @@
+using System.ComponentModel.DataAnnotations;
+
+namespace FitnessTracker.Models;
+
 public class Set {
     public int Id {get; set;}
     public Exercise Exercise {get; set;}
     public int? Weight {get; set;}
     public bool IsBodyWeight {get; set;}
+
+    [DataType(DataType.DateTime)]
     public DateTime StartTime {get; set;}
+
+    [DataType(DataType.DateTime)]
     public DateTime? EndTime {get; set;}
 
     Set(int id, Exercise exercise){
