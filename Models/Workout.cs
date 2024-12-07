@@ -1,4 +1,6 @@
-class Workout {
+namespace FitnessTracker.Models;
+
+public class Workout {
     public int? Id {get; set;}
 
     private DateTime start;
